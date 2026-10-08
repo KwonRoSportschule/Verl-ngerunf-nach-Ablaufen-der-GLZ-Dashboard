@@ -3,260 +3,230 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="KwonRo Telefonassistent für Vertragsverlängerungen – Leitfaden, Preise und direkte Arbeitszugänge.">
+  <meta name="description" content="KwonRo Telefonassistent für Vertragsverlängerungen – Leitfaden, Preise ab 01.11.2026 und direkte Arbeitszugänge.">
   <meta name="theme-color" content="#0C2340">
   <title>KwonRo | Telefonassistent Vertragsverlängerung</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="app-shell">
-    <header class="site-header">
-      <div class="brand" aria-label="KwonRo Vertragsverlängerung">
-        <span class="brand__name">KwonRo</span>
-        <span class="brand__context">Vertragsverlängerung</span>
+    <header class="topbar">
+      <div class="brand" aria-label="KwonRo Sportschule">
+        <span class="brand__name">KwonRo<i aria-hidden="true"></i></span>
+        <span class="brand__context">Sportschule</span>
       </div>
-      <div class="heading-group">
+      <div class="topbar__title">
         <h1>Telefonassistent Vertragsverlängerung</h1>
-        <p>Leitfaden, Preise und direkte Arbeitszugänge</p>
+        <p>Leitfaden, Preise und Arbeitszugänge auf einen Blick</p>
       </div>
+      <span class="topbar__status">Preise gültig ab 01.11.2026</span>
     </header>
 
     <main class="dashboard">
+      <!-- ============ LEITFADEN ============ -->
       <section class="panel guide-panel" aria-labelledby="guide-title">
         <div class="panel__header">
-          <span class="eyebrow">Gespräch sicher führen</span>
+          <span class="eyebrow">Gespräch führen</span>
           <h2 id="guide-title">Telefonleitfaden</h2>
+          <p class="panel__lead">Erst der Mensch, dann der Vertrag. Zuhören, Erfolge würdigen, eine klare Empfehlung geben.</p>
         </div>
 
-        <div class="preflight-note">
-          <strong>Vor dem Anruf prüfen:</strong> Mitglied nicht gekündigt und nicht bereits in monatlicher Laufzeit.
-        </div>
+        <nav class="step-nav" aria-label="Gesprächsschritte">
+          <a href="#step-1"><b>1</b>Vorbereitung</a>
+          <a href="#step-2"><b>2</b>Einstieg</a>
+          <a href="#step-3"><b>3</b>Zuhören</a>
+          <a href="#step-4"><b>4</b>Ziele</a>
+          <a href="#step-5"><b>5</b>Überleitung</a>
+          <a href="#step-6"><b>6</b>Empfehlung</a>
+          <a href="#step-7"><b>7</b>Tarif-Check</a>
+          <a href="#step-8"><b>8</b>Abschluss</a>
+          <a href="#step-9"><b>9</b>Danach</a>
+          <a href="#objections" class="step-nav__alt">Einwände</a>
+        </nav>
 
         <div class="guide-scroll" tabindex="0" aria-label="Telefonleitfaden – scrollbar">
           <article class="guide-content">
-            <section class="guide-step">
-              <h3><span>1</span> Vorbereitung</h3>
-              <p>Vor dem Anruf kurz in MATOOL prüfen:</p>
-              <ul>
-                <li>Mitglied bereits gekündigt?</li>
-                <li>Mitglied bereits in monatlicher Laufzeit?</li>
-                <li>Aktueller Tarif und Monatsbeitrag</li>
-                <li>Vertragsende</li>
+
+            <aside class="mindset">
+              <strong>Deine Haltung</strong>
+              <p>Du rufst nicht an, um etwas zu verkaufen, sondern damit <span class="ph">[Name]</span> dranbleibt und weiterhin den besten Preis bekommt. Lächle beim Sprechen, denn das hört man. Nenne den Namen, hör mehr zu, als du redest, und halte Pausen aus.</p>
+            </aside>
+
+            <section class="guide-step" id="step-1">
+              <h3><span>1</span> Vorbereitung <em>2 Minuten</em></h3>
+              <p>Kurz in MATOOL prüfen:</p>
+              <ul class="check-grid">
+                <li>Schon gekündigt?</li>
+                <li>Schon in monatlicher Laufzeit?</li>
+                <li>Aktueller Tarif &amp; Beitrag</li>
+                <li>Ende der Grundlaufzeit</li>
+                <li>Gürtel / letzte Prüfung</li>
+                <li>Trainer:in &amp; Trainingshäufigkeit</li>
               </ul>
-              <p class="key-message"><strong>Wenn gekündigt oder bereits in monatlicher Laufzeit:</strong> Kein Verlängerungsanruf notwendig.</p>
+              <p class="stop"><strong>Stopp:</strong> Wer gekündigt hat oder bereits monatlich läuft, bekommt keinen Verlängerungsanruf.</p>
+              <p class="tip"><strong>Persönlicher Aufhänger:</strong> Schreib dir <em>eine</em> konkrete Sache auf, z.&nbsp;B. eine bestandene Prüfung, ein Lob vom Trainer oder wie regelmäßig jemand kommt. Wenn nichts in der Historie steht, frag kurz den Trainer.</p>
+              <p class="hint">Bei Kindern: Du sprichst mit den Eltern, aber es geht um das Kind. Nenne das Kind beim Namen.</p>
             </section>
 
-            <section class="guide-step">
-              <h3><span>2</span> Gesprächseinstieg</h3>
-              <p class="quote">„Hallo Frau/Herr [Name], hier ist [Mitarbeiter] von der KwonRo Sportschule. Haben Sie gerade kurz zwei Minuten Zeit?“</p>
-              <p>Wenn ja:</p>
-              <p class="quote">„Ich melde mich, weil Ihre aktuelle Grundlaufzeit in Kürze endet und wir gerne kurz mit Ihnen besprechen möchten, wie Sie Ihr Training bei uns weiterführen möchten.“</p>
+            <section class="guide-step" id="step-2">
+              <h3><span>2</span> Einstieg – Beziehung zuerst</h3>
+              <p class="say">„Hallo Frau/Herr <span class="ph">[Name]</span>, hier ist <span class="ph">[dein Name]</span> von KwonRo. Erwische ich Sie gerade gut? Es dauert nur ein paar Minuten.“</p>
+              <div class="branch">
+                <p><b>Passt gerade nicht:</b></p>
+                <p class="say">„Kein Problem! Wann passt es Ihnen besser, heute Abend oder morgen Vormittag?“</p>
+              </div>
+              <p><b>Passt:</b> Anlass positiv formulieren, nicht mit dem Vertrag anfangen.</p>
+              <p class="say">„Schön! <span class="ph">[Kind/Sie]</span> trainiert ja jetzt schon seit <span class="ph">[Zeitraum]</span> bei uns. Ich wollte mal hören, wie es so läuft. Und ich habe noch einen Tipp, wie Sie bei uns weiterhin günstiger trainieren.“</p>
             </section>
 
-            <section class="guide-step">
-              <h3><span>3</span> Zufriedenheit abfragen</h3>
-              <p class="quote">„Wie zufrieden sind Sie aktuell mit Ihrem Training bei uns?“</p>
-              <p>Kurz zuhören. Falls sinnvoll:</p>
-              <p class="quote">„Gibt es aktuell etwas, das wir verbessern können oder bei dem wir Sie besser unterstützen können?“</p>
-              <p class="goal"><strong>Ziel:</strong> Nicht sofort verkaufen. Zuerst herausfinden, ob das Mitglied grundsätzlich zufrieden ist.</p>
-            </section>
-
-            <section class="guide-step">
-              <h3><span>4</span> Weiterführung besprechen</h3>
-              <p>Wenn das Mitglied zufrieden ist:</p>
-              <p class="quote">„Sehr schön. Dann würden wir Ihre Mitgliedschaft gerne zu einer neuen Grundlaufzeit weiterführen.“</p>
-              <p>Anschließend passende Möglichkeiten anhand der Preisliste erklären: Action, Master, gegebenenfalls Family-Tarif sowie 9 oder 15 Monate.</p>
-              <div class="term-pair">
-                <p><strong>Action</strong><br>Training einmal wöchentlich.</p>
-                <p><strong>Master</strong><br>Kinder zweimal wöchentlich; Erwachsene alle angebotenen Stunden.</p>
+            <section class="guide-step" id="step-3">
+              <h3><span>3</span> Zuhören &amp; Erfolge würdigen</h3>
+              <p>Offene Fragen stellen, die man nicht mit Ja oder Nein beantworten kann:</p>
+              <p class="say">„Wie gefällt es <span class="ph">[Kind]</span> / Ihnen gerade bei uns?“</p>
+              <p class="say">„Was hat sich seit dem Start verändert?“</p>
+              <p>Dann deinen Aufhänger aus Schritt 1 einbringen:</p>
+              <p class="say">„<span class="ph">[Kind]</span> hat ja im <span class="ph">[Monat]</span> die <span class="ph">[Gürtel]</span>-Prüfung geschafft. Da können Sie richtig stolz sein!“</p>
+              <p class="tip"><strong>Achte auf das Motiv</strong> hinter den Antworten, zum Beispiel Selbstbewusstsein, Konzentration, Fitness, Selbstverteidigung, Spaß oder Ausgleich zum Alltag. Genau darauf baust du die Empfehlung auf. Ziel: Das Mitglied redet mehr als du.</p>
+              <div class="branch branch--warn">
+                <p><b>Wenn etwas nicht passt:</b> Jetzt nicht verkaufen. Erst das Problem lösen.</p>
+                <p class="say">„Danke, dass Sie das so offen sagen. Was müsste passieren, damit es für Sie wieder richtig gut passt?“</p>
+                <p>Lösung anbieten, z.&nbsp;B. andere Gruppe oder Uhrzeit, ein Gespräch mit dem Trainer oder eine Probestunde in einer anderen Sportart. Die Verlängerung erst ansprechen, wenn das geklärt ist. Bei Bedarf einen Rückruf vereinbaren.</p>
               </div>
             </section>
 
-            <section class="guide-step">
-              <h3><span>5</span> Preis erklären</h3>
-              <p>Nicht alle Preise gleichzeitig nennen – nur den relevanten Tarif erklären.</p>
-              <p class="quote">„Bei einer Laufzeit von 15 Monaten liegt der Monatsbeitrag bei [Preis] Euro. Bei 9 Monaten wären es [Preis] Euro.“</p>
-              <p class="quote">„Nach Ablauf der neuen Grundlaufzeit geht die Mitgliedschaft wieder in die reguläre monatliche Laufzeit über.“</p>
-              <p>Die konkrete Preisliste befindet sich direkt rechts neben diesem Leitfaden.</p>
+            <section class="guide-step" id="step-4">
+              <h3><span>4</span> Ziele für die nächste Zeit</h3>
+              <p>Den Blick nach vorne richten. Wer ein Ziel vor Augen hat, bleibt dran.</p>
+              <p class="say">„Was wäre denn das nächste Ziel? Der nächste Gürtel?“</p>
+              <p class="say">„Wenn Sie in einem Jahr zurückschauen: Was soll <span class="ph">[Kind]</span> bis dahin geschafft haben?“</p>
+              <p class="say">„Genau das ist ein schönes Ziel für die nächste Laufzeit. Da bleiben wir gemeinsam dran.“</p>
             </section>
 
-            <section class="guide-step">
-              <h3><span>6</span> Tarifwechsel</h3>
-              <p class="quote">„Wir können bei der Verlängerung natürlich auch schauen, ob ein anderer Tarif inzwischen besser zu Ihrem Training passt.“</p>
-              <p>Beispiele: Action → Master, Einzelvertrag → Family oder andere Trainingshäufigkeit.</p>
+            <section class="guide-step" id="step-5">
+              <h3><span>5</span> Überleitung zur Verlängerung</h3>
+              <p class="say">„Damit es genau so weitergeht, noch kurz das Praktische: Die Grundlaufzeit von <span class="ph">[Kind/Ihnen]</span> endet am <span class="ph">[Datum]</span>. Danach würde die Mitgliedschaft monatlich zum regulären Beitrag von <span class="ph">[Flex-Preis]</span> € weiterlaufen. Mit einer neuen Laufzeit bleiben Sie deutlich günstiger, deshalb rufe ich an.“</p>
+              <p class="hint">Den Flex-Preis findest du in der Preisliste rechts, durchgestrichen auf jeder Laufzeit-Karte.</p>
             </section>
 
-            <section class="guide-step">
-              <h3><span>7</span> Termin vereinbaren</h3>
-              <p class="quote">„Perfekt. Dann machen wir am besten kurz einen Termin aus, damit wir die Verlängerung in der Sportschule gemeinsam unterschreiben können.“</p>
-              <p>Dann den <strong>Outlook-Kalender öffnen</strong> und einen Termin vereinbaren.</p>
+            <section class="guide-step" id="step-6">
+              <h3><span>6</span> Eine klare Empfehlung</h3>
+              <p>Nicht alle Preise vorlesen. <b>Eine</b> Empfehlung geben, passend zum Motiv aus Schritt 3:</p>
+              <p class="say">„Weil <span class="ph">[Kind]</span> so gut dabei ist, empfehle ich Ihnen die 15 Monate. Dann zahlen Sie <span class="ph">[Preis]</span> € statt <span class="ph">[Flex-Preis]</span> € im Monat. Über die Laufzeit sparen Sie rund <span class="ph">[Ersparnis]</span> €.“</p>
+              <p class="pause">Pause. Nicht weiterreden, die Antwort abwarten.</p>
+              <p>Wenn 15 Monate zu lang sind, die zweite Option anbieten:</p>
+              <p class="say">„Wenn Ihnen 15 Monate zu lang sind, gibt es auch 9 Monate für <span class="ph">[Preis]</span> €. Was passt für Sie besser?“</p>
+              <p class="say">„Nach der neuen Laufzeit geht es ganz normal monatlich weiter, zu dem Beitrag, der in der Preisliste steht.“</p>
+              <p class="tip"><strong>Tipp:</strong> Klick rechts auf eine Preiskarte. Darunter erscheint dann der fertige Satz mit Preis und Ersparnis zum Vorlesen.</p>
             </section>
 
-            <section class="guide-step">
-              <h3><span>8</span> Abschluss</h3>
-              <p class="quote">„Super, dann bereiten wir alles vor. Vielen Dank und weiterhin viel Spaß beim Training. Bis bald auf der Matte!“</p>
+            <section class="guide-step" id="step-7">
+              <h3><span>7</span> Passt der Tarif noch?</h3>
+              <p class="say">„Bei der Gelegenheit schauen wir auch gern, ob ein anderer Tarif inzwischen besser passt.“</p>
+              <div class="signal-grid">
+                <p><b>Trainiert gern öfter</b>Action → Master<br><span>„Dann könnte <span class="ph">[Kind]</span> zweimal pro Woche kommen und schneller Fortschritte machen.“</span></p>
+                <p><b>Geschwister oder Eltern trainieren</b>Family-Tarif prüfen<br><span>Kickboxen/Boxen: Für jedes weitere Familienmitglied entfällt das Startpaket.</span></p>
+                <p><b>Interesse an anderer Sportart</b>All-Inclusive +39 €/Monat<br><span>„Für 39 € im Monat sind Kickboxen, Boxen und Functional Fitness mit dabei.“</span></p>
+                <p><b>Eltern wollen selbst fit werden</b>Functional Fitness Family+Couple<br><span>„Weil schon jemand aus Ihrer Familie bei uns trainiert, zahlen Sie nur 39 € im Monat.“</span></p>
+              </div>
             </section>
 
-            <section class="guide-step">
+            <section class="guide-step" id="step-8">
+              <h3><span>8</span> Abschluss &amp; Termin</h3>
+              <p class="say">„Sollen wir das so machen? Dann machen wir kurz einen Termin, damit wir das vor Ort zusammen unterschreiben. Passt es Ihnen besser <span class="ph">[Tag 1]</span> vor dem Training oder <span class="ph">[Tag 2]</span>?“</p>
+              <p>Termin direkt im <b>Outlook-Kalender</b> eintragen und dann zusammenfassen:</p>
+              <p class="say">„Super! Dann also <span class="ph">[Tag]</span> um <span class="ph">[Uhrzeit]</span>. Ich bereite alles vor, Sie müssen nur noch unterschreiben.“</p>
+              <p class="say">„Danke Ihnen, Frau/Herr <span class="ph">[Name]</span>! Und richten Sie <span class="ph">[Kind]</span> aus, dass wir uns schon auf die nächste Prüfung freuen. Bis bald auf der Matte!“</p>
+            </section>
+
+            <section class="guide-step" id="step-9">
               <h3><span>9</span> Nach dem Gespräch</h3>
               <ol class="checklist">
-                <li>Ergebnis im Tracking eintragen.</li>
-                <li>Gespräch / Vereinbarung in MATOOL dokumentieren.</li>
-                <li>Falls vereinbart: Termin im Outlook-Kalender eintragen.</li>
-                <li>Vertrag vorbereiten.</li>
+                <li>Ergebnis im <b>Tracking</b> eintragen</li>
+                <li>Gespräch &amp; Vereinbarung in <b>MATOOL</b> dokumentieren, inklusive Motiv und Ziel</li>
+                <li>Termin im <b>Outlook-Kalender</b> eintragen</li>
+                <li>Vertrag vorbereiten</li>
+                <li>Excel-Tabelle aktualisieren</li>
+                <li>Team briefen, damit der Trainer beim nächsten Training ein persönliches Wort findet</li>
               </ol>
             </section>
+
+            <section class="guide-step objections" id="objections">
+              <h3><span>?</span> Einwände – ruhig &amp; ehrlich</h3>
+              <p>Grundregel: Erst Verständnis zeigen, dann eine Frage stellen und erst danach eine Lösung anbieten. Niemals drängen.</p>
+
+              <details>
+                <summary>„Das ist mir zu teuer.“</summary>
+                <p class="say">„Verstehe ich gut. Darf ich fragen: Geht es eher um den Monatsbeitrag oder um die Laufzeit?“</p>
+                <p>Beitrag: Die längere Laufzeit hat den günstigsten Monatspreis. Ggf. Action statt Master anbieten. Auf die Woche runterrechnen (steht im Preis-Satz rechts).</p>
+                <p class="say">„Mit 15 Monaten sind das knapp <span class="ph">[Wochenbetrag]</span> € pro Woche.“</p>
+              </details>
+
+              <details>
+                <summary>„Wir wissen nicht, ob er/sie so lange dabeibleibt.“</summary>
+                <p class="say">„Das ist eine ehrliche Frage, die sich viele Eltern stellen. Was würde <span class="ph">[Kind]</span> denn selbst sagen?“</p>
+                <p>Das Ziel aus Schritt 4 aufgreifen. Ein festes Ziel wie der nächste Gürtel hilft beim Dranbleiben. Als kleineren Schritt die 9 Monate anbieten.</p>
+              </details>
+
+              <details>
+                <summary>„Das muss ich erst mit meinem Partner besprechen.“</summary>
+                <p class="say">„Klar, das ist eine gemeinsame Entscheidung. Wie, glauben Sie, sieht Ihr Partner das?“</p>
+                <p class="say">„Sollen wir trotzdem schon einen Termin einplanen? Dann kommen Sie gern zu zweit, und ich beantworte alle Fragen vor Ort.“</p>
+                <p>Sonst einen konkreten Rückruf vereinbaren, mit Tag und Uhrzeit.</p>
+              </details>
+
+              <details>
+                <summary>„Ich möchte lieber flexibel bleiben.“</summary>
+                <p class="say">„Das geht natürlich. Der Flex-Tarif ist monatlich kündbar. Ich möchte nur, dass Sie den Unterschied kennen: Mit 15 Monaten zahlen Sie <span class="ph">[Differenz]</span> € weniger im Monat.“</p>
+                <p>Die Entscheidung respektieren und das Ergebnis im Tracking eintragen.</p>
+              </details>
+
+              <details>
+                <summary>„Gerade ist alles stressig / wenig Zeit.“</summary>
+                <p class="say">„Kenne ich. Viele sagen uns, dass das Training gerade dann der beste Ausgleich ist. Würde einmal pro Woche besser in Ihren Alltag passen?“</p>
+                <p>Action (1× pro Woche) als entspannte Variante anbieten.</p>
+              </details>
+
+              <details>
+                <summary>Umzug, Krankheit oder „Ich möchte aufhören“</summary>
+                <p class="say">„Danke, dass Sie mir das sagen. Darf ich fragen, was der Grund ist?“</p>
+                <p>Zuhören, nicht überreden. Den Grund in MATOOL notieren und die Leitung informieren.</p>
+              </details>
+            </section>
+
           </article>
         </div>
       </section>
 
+      <!-- ============ PREISE ============ -->
       <section class="panel pricing-panel" aria-labelledby="pricing-title">
         <div class="panel__header pricing-heading">
           <div>
-            <span class="eyebrow">Vertragsverlängerung</span>
-            <h2 id="pricing-title">Preise Taekwondo 2026</h2>
+            <span class="eyebrow">Unsere Preise 2026</span>
+            <h2 id="pricing-title">Preisliste</h2>
           </div>
-          <span class="price-status">Gültig 2026</span>
+          <div class="pdf-links" aria-label="Preislisten als PDF öffnen">
+            <span>PDF</span>
+            <a href="preislisten/Preisliste_20261101_TKD.pdf" target="_blank" rel="noopener">Taekwondo</a>
+            <a href="preislisten/Preisliste_20261101_KBX_BX.pdf" target="_blank" rel="noopener">Kickboxen &amp; Boxen</a>
+            <a href="preislisten/Preisliste_20261101_FF.pdf" target="_blank" rel="noopener">Functional Fitness</a>
+          </div>
         </div>
 
-        <div class="tariff-list">
-          <section class="tariff" aria-labelledby="action-title">
-            <div class="tariff__intro">
-              <h3 id="action-title">Action</h3>
-              <p>1× wöchentlich · Mu-Ki: 1 Elternteil mit Kind</p>
-            </div>
-            <div class="price-grid">
-              <article class="price-card price-card--preferred">
-                <div><span class="duration">15 Monate</span><span class="badge">ca. 30 % Rabatt</span></div>
-                <p class="price">99 € <small>/ Monat</small></p>
-                <p class="after">ab 16. Monat 139 €</p>
-              </article>
-              <article class="price-card price-card--preferred">
-                <div><span class="duration">9 Monate</span><span class="badge">ca. 15 % Rabatt</span></div>
-                <p class="price">119 € <small>/ Monat</small></p>
-                <p class="after">ab 10. Monat 139 €</p>
-              </article>
-              <article class="price-card price-card--flex">
-                <div><span class="duration">Flex · 1 Monat</span></div>
-                <p class="price">139 € <small>/ Monat</small></p>
-              </article>
-            </div>
-          </section>
-
-          <section class="tariff" aria-labelledby="master-title">
-            <div class="tariff__intro">
-              <h3 id="master-title">Master</h3>
-              <p>Kinder 2× wöchentlich · Erwachsene: alle Stunden</p>
-            </div>
-            <div class="price-grid">
-              <article class="price-card price-card--preferred">
-                <div><span class="duration">15 Monate</span></div>
-                <p class="price">119 € <small>/ Monat</small></p>
-                <p class="after">ab 16. Monat 149 €</p>
-              </article>
-              <article class="price-card price-card--preferred">
-                <div><span class="duration">9 Monate</span></div>
-                <p class="price">129 € <small>/ Monat</small></p>
-                <p class="after">ab 10. Monat 149 €</p>
-              </article>
-              <article class="price-card price-card--flex">
-                <div><span class="duration">Flex · 1 Monat</span></div>
-                <p class="price">149 € <small>/ Monat</small></p>
-              </article>
-            </div>
-          </section>
-
-          <section class="tariff" aria-labelledby="action-family-title">
-            <div class="tariff__intro">
-              <h3 id="action-family-title">ActionFamily</h3>
-              <p>1× wöchentlich · Mu-Ki: weiteres Familienmitglied</p>
-              <p class="family-note">Gilt auch für Kickboxen: 1× Training pro Woche.</p>
-            </div>
-            <div class="price-grid">
-              <article class="price-card price-card--preferred">
-                <div><span class="duration">15 Monate</span></div>
-                <p class="price">79 € <small>/ Monat</small></p>
-                <p class="after">ab 16. Monat 119 €</p>
-              </article>
-              <article class="price-card price-card--preferred">
-                <div><span class="duration">9 Monate</span></div>
-                <p class="price">99 € <small>/ Monat</small></p>
-                <p class="after">ab 10. Monat 119 €</p>
-              </article>
-              <article class="price-card price-card--flex">
-                <div><span class="duration">Flex · 1 Monat</span></div>
-                <p class="price">119 € <small>/ Monat</small></p>
-              </article>
-            </div>
-          </section>
-
-          <section class="tariff" aria-labelledby="master-family-title">
-            <div class="tariff__intro">
-              <h3 id="master-family-title">MasterFamily</h3>
-              <p>Kinder 2× wöchentlich · Erwachsene: alle Stunden</p>
-              <p class="family-note">Gilt auch für Kickboxen: 2× Training pro Woche.</p>
-            </div>
-            <div class="price-grid">
-              <article class="price-card price-card--preferred">
-                <div><span class="duration">15 Monate</span></div>
-                <p class="price">99 € <small>/ Monat</small></p>
-                <p class="after">ab 16. Monat 129 €</p>
-              </article>
-              <article class="price-card price-card--preferred">
-                <div><span class="duration">9 Monate</span></div>
-                <p class="price">109 € <small>/ Monat</small></p>
-                <p class="after">ab 10. Monat 129 €</p>
-              </article>
-              <article class="price-card price-card--flex">
-                <div><span class="duration">Flex · 1 Monat</span></div>
-                <p class="price">129 € <small>/ Monat</small></p>
-              </article>
-            </div>
-          </section>
+        <div class="sport-tabs" role="tablist" aria-label="Sportart wählen">
+          <button type="button" role="tab" data-sport="tkd" aria-selected="true">Taekwondo</button>
+          <button type="button" role="tab" data-sport="kbx" aria-selected="false">Kickboxen &amp; Boxen</button>
+          <button type="button" role="tab" data-sport="ff" aria-selected="false">Functional Fitness</button>
         </div>
 
-        <div class="pricing-notes">
-          <p>Alle Preise inkl. MwSt. · Abbuchung monatlich im Voraus · Preisangaben entsprechend KwonRo Preisliste 2026.</p>
-          <p>Family: 1 Erwachsener + mind. 1 Kind/Jugendlicher oder ab 2 Kinder/Jugendliche je nach Programm. Gebühren für Gürtelprüfungen können zusätzlich anfallen.</p>
+        <div class="pricing-scroll" tabindex="0" aria-label="Preise – scrollbar">
+          <div id="pricing-content" role="tabpanel"></div>
         </div>
 
-        <details class="starter-packages">
-          <summary>Startpakete anzeigen <span aria-hidden="true">+</span></summary>
-          <div class="package-grid">
-            <article>
-              <h3>Startpaket Mu-Ki <strong>99 €</strong></h3>
-              <p><b>Enthalten:</b> Check-in-Karte, Trainings-T-Shirt für 1 Elternteil und 1 Kind.</p>
-              <p><b>Nicht enthalten:</b> T-Shirt für ein zweites Kind laut Preisliste.</p>
-            </article>
-            <article>
-              <h3>Panda-Kids | Tiger-Kids <strong>159 €</strong></h3>
-              <p><b>Enthalten:</b> Check-in-Karte, Kampfanzug und Gürtel, Trainings-T-Shirt, UTTC-Mitgliedschaft im Anmeldejahr, Schul- und Verbandsabzeichen sowie Verbandsausweis gemäß bestehender Regelung.</p>
-              <p><b>Nicht enthalten:</b> Gürtelprüfungen.</p>
-            </article>
-            <article>
-              <h3>Warrior-Tigers | Jugend-Erwachsene <strong>199 €</strong></h3>
-              <p><b>Enthalten:</b> Check-in-Karte, Kampfanzug, Gürtel, Trainings-T-Shirt, Safetie-Paket, Schul- und Verbandsabzeichen, Verbandsausweis sowie UTTC-Mitgliedschaft im Anmeldejahr.</p>
-              <p><b>Nicht enthalten:</b> Gürtelprüfungen.</p>
-            </article>
-          </div>
-        </details>
-
-        <section class="process-checklist" aria-labelledby="process-title">
-          <div class="process-checklist__heading">
-            <span class="eyebrow">Verlängerungsprozess</span>
-            <h3 id="process-title">Checkliste</h3>
-          </div>
-          <ol>
-            <li><b>01</b><span>Prüfen, ob ein Call erforderlich ist</span></li>
-            <li><b>02</b><span>Wenn passend: Call durchführen</span></li>
-            <li><b>03</b><span>Termin vereinbaren und eintragen</span></li>
-            <li><b>04</b><span>Vertrag vorbereiten</span></li>
-            <li><b>05</b><span>Alles in MATOOL notieren</span></li>
-            <li><b>06</b><span>Excel-Tabelle aktualisieren</span></li>
-            <li><b>07</b><span>Team briefen</span></li>
-          </ol>
-        </section>
-
+        <div class="pitch" aria-live="polite">
+          <span class="pitch__label">Dein Satz zum Vorlesen</span>
+          <p id="pitch-text">Klick auf eine Preiskarte. Hier erscheint dann der passende Satz mit Preis und Ersparnis.</p>
+          <p id="pitch-extra" class="pitch__extra"></p>
+        </div>
       </section>
     </main>
 
@@ -269,6 +239,11 @@
       <a class="action-button" href="https://core.matool.de/index.php" target="_blank" rel="noopener noreferrer">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6c0-1.7 3.6-3 8-3s8 1.3 8 3-3.6 3-8 3-8-1.3-8-3Zm0 0v6c0 1.7 3.6 3 8 3s8-1.3 8-3V6M4 12v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></svg>
         <span><strong>MATOOL öffnen</strong><small>Gespräch in Historie eintragen</small></span>
+        <span class="arrow" aria-hidden="true">↗</span>
+      </a>
+      <a class="action-button" href="https://outlook.office.com/calendar/" target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v14H4zM4 10h16M8 3v5M16 3v5M8 14h3M8 17h3"/></svg>
+        <span><strong>Outlook-Kalender</strong><small>Unterschriftstermin eintragen</small></span>
         <span class="arrow" aria-hidden="true">↗</span>
       </a>
     </nav>

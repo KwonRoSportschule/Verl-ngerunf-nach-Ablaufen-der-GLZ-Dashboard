@@ -1,22 +1,22 @@
 # KwonRo Vertragsverlängerungs-Dashboard
 
-Dieses statische Dashboard unterstützt Mitarbeitende bei Telefonaten zur Vertragsverlängerung. Auf einer Seite stehen der vollständige Telefonleitfaden, die Taekwondo-Preise 2026 und direkte Zugänge zu Tracking und MATOOL bereit. Die Seite speichert oder überträgt keine Mitgliedsdaten und verwendet weder Analysewerkzeuge noch externe Bibliotheken.
+Dieses statische Dashboard unterstützt Mitarbeitende bei Telefonaten zur Vertragsverlängerung. Auf einer Seite stehen der Telefonleitfaden (inklusive Einwandbehandlung), die Preise ab 01.11.2026 für Taekwondo, Kickboxen & Boxen und Functional Fitness sowie direkte Zugänge zu Tracking, MATOOL und dem Outlook-Kalender. Die Seite speichert oder überträgt keine Mitgliedsdaten und verwendet weder Analysewerkzeuge noch externe Bibliotheken.
 
 ## Dateien
 
-- `index.html` enthält Aufbau, Telefonleitfaden, Preise und Schaltflächen.
-- `style.css` enthält Farben, Layout und die Darstellung für Desktop, Tablet und Smartphone.
-- `script.js` ist für mögliche spätere Funktionen vorbereitet.
+- `index.html` enthält Aufbau, Telefonleitfaden und Schaltflächen.
+- `style.css` enthält Farben (KwonRo-CI), Layout und die Darstellung für Desktop, Tablet und Smartphone.
+- `script.js` enthält **alle Preise** und die Funktionen: Sportart wechseln, Preiskarte anklicken → fertiger Satz zum Vorlesen, Schritt-Navigation im Leitfaden.
+- `preislisten/` enthält die Original-Preislisten als PDF. Sie lassen sich über die PDF-Buttons im Dashboard öffnen.
 - `README.md` ist diese Anleitung.
 
 ## Über GitHub Pages veröffentlichen
 
-1. Die vier Dateien in die oberste Ebene eines GitHub-Repositorys hochladen.
-2. Im Repository **Settings** öffnen.
-3. Links **Pages** auswählen.
-4. Unter **Build and deployment** bei **Source** „Deploy from a branch“ wählen.
-5. Den Branch `main` und den Ordner `/ (root)` auswählen, dann **Save** anklicken.
-6. GitHub zeigt nach kurzer Zeit die öffentliche Adresse der Seite an.
+1. Im Repository **Settings** öffnen.
+2. Links **Pages** auswählen.
+3. Unter **Build and deployment** bei **Source** „Deploy from a branch“ wählen.
+4. Den Branch `main` und den Ordner `/ (root)` auswählen, dann **Save** anklicken.
+5. GitHub zeigt nach kurzer Zeit die öffentliche Adresse der Seite an.
 
 Ein Build-Prozess, npm oder eine Serverkonfiguration sind nicht erforderlich.
 
@@ -24,17 +24,22 @@ Ein Build-Prozess, npm oder eine Serverkonfiguration sind nicht erforderlich.
 
 Die Dateien können mit einem normalen Texteditor bearbeitet werden.
 
-### Links ändern
-
-Die Links für **Tracking** und **MATOOL** stehen am Ende der Datei `index.html` im Abschnitt mit der Klasse `action-bar`. Nach `href=` kann jeweils die Adresse zwischen den Anführungszeichen ersetzt werden.
-
 ### Preise ändern
 
-Alle Tarife stehen in `index.html` im Abschnitt `pricing-panel`. Dort können Monatsbeiträge, Folgetarife, Laufzeiten und Texte direkt geändert werden.
+Alle Preise stehen ganz oben in `script.js` im Objekt `SPORTS`. Pro Tarif gibt es:
+
+- `flex`: Flex-Preis (monatlich kündbar)
+- `offers`: Laufzeit-Angebote mit `months` (Laufzeit), `price` (Monatsbeitrag), `after` (Beitrag nach Ablauf laut Preisliste) und `discount` (Rabatt-Text)
+
+Die Ersparnis („spart … €“) und der Satz zum Vorlesen werden automatisch berechnet. Bei einer neuen Preisliste auch die PDFs im Ordner `preislisten/` austauschen und die Links in `index.html` (Abschnitt `pdf-links`) anpassen.
+
+### Links ändern
+
+Die Links für **Tracking**, **MATOOL** und **Outlook** stehen am Ende der Datei `index.html` im Abschnitt mit der Klasse `action-bar`.
 
 ### Telefonleitfaden ändern
 
-Der Leitfaden steht in `index.html` im Abschnitt `guide-content`. Jeder Gesprächsschritt ist ein eigener Abschnitt mit der Klasse `guide-step`.
+Der Leitfaden steht in `index.html` im Abschnitt `guide-content`. Jeder Gesprächsschritt ist ein eigener Abschnitt mit der Klasse `guide-step`. Sätze zum Vorlesen haben die Klasse `say`, Platzhalter wie `[Name]` die Klasse `ph`. Die Einwände stehen im Abschnitt `objections`.
 
 ## Datenschutz und Betrieb
 
