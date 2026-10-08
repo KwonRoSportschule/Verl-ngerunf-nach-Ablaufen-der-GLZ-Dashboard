@@ -31,7 +31,9 @@ Alle Preise stehen ganz oben in `script.js` im Objekt `SPORTS`. Pro Tarif gibt e
 - `flex`: Flex-Preis (monatlich kündbar)
 - `offers`: Laufzeit-Angebote mit `months` (Laufzeit), `price` (Monatsbeitrag), `after` (Beitrag nach Ablauf laut Preisliste) und `discount` (Rabatt-Text)
 
-Die Ersparnis („spart … €“) und der Satz zum Vorlesen werden automatisch berechnet. Bei einer neuen Preisliste auch die PDFs im Ordner `preislisten/` austauschen und die Links in `index.html` (Abschnitt `pdf-links`) anpassen.
+Die Ersparnis („spart … €“) und der Satz zum Vorlesen werden automatisch berechnet.
+
+Nach jeder Änderung an `style.css` oder `script.js` in `index.html` die Versionsnummer hinter `?v=` erhöhen (z. B. auf das heutige Datum). Sonst zeigen Browser bis zu 10 Minuten lang noch die alte Version an. Bei einer neuen Preisliste auch die PDFs im Ordner `preislisten/` austauschen und die Links in `index.html` (Abschnitt `pdf-links`) anpassen.
 
 ### Links ändern
 
