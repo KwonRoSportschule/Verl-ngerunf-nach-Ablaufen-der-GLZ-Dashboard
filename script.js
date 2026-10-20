@@ -5,18 +5,18 @@
    flex   = Flex-Preis (1 Monat, monatlich kündbar)
    offers = Laufzeit-Angebote: months, price (Monatsbeitrag),
             after (Beitrag nach Ablauf laut Preisliste), discount
-   Stand: Preislisten vom 01.11.2026 (überarbeitet am 19.10.2026)
+   Stand: Preislisten vom 01.11.2026 (überarbeitet am 20.10.2026)
    ===================================================================== */
 const ADDON_PRICE = 39;
 const STUDENT_DISCOUNT = 10;
 const STUDENT_TEXT = "Gegen Vorlage eines gültigen Nachweises wird jede Mitgliedschaft bis zum Ende der Ausbildung/des Studiums um 10,- günstiger.";
 const BASE_NOTE = "Alle Preise sind Durchschnittspreise, auch fällig bei Betriebsferien · Preisangaben in € inkl. MwSt. · Abbuchung monatlich im Voraus.";
-const PARENT_NOTE = "* Eltern Mitgliedschaft: 1 Erwachsener + mind. 1 Kind/Jugendlicher oder ab 2 Kinder/Jugendliche je nach Programm zzgl. Gebühr – Voraussetzung ist die Abbuchung über gleiches Konto.";
+const PARENT_NOTE = "* Eltern Mitgliedschaft: 1 Erwachsener + mind. 1 Kind/Jugendlicher oder ab 2 Kinder/Jugendliche je nach Programm. Voraussetzung ist die Abbuchung über gleiches Konto.";
 
 const SPORTS = {
   tkd: {
     label: "Taekwondo",
-    allInclusive: "Zu deiner persönlichen Taekwondo Mitgliedschaft zubuchbar. Enthalten: Kickboxen-, Boxen- und Functional Fitness-Stunden, so oft sie stattfinden.",
+    allInclusive: "Zu deiner persönlichen Taekwondo Mitgliedschaft buchbar. Enthalten: Kickboxen-, Boxen- und Functional Fitness-Stunden, so oft sie stattfinden.",
     student: STUDENT_TEXT,
     tariffs: [
       { name: "Action", desc: "Training einmal wöchentlich · Mu-Ki: einmal wöchentlich ein Elternteil mit Kind", flex: 139,
@@ -29,7 +29,7 @@ const SPORTS = {
         offers: [{ months: 15, price: 99, after: 139, discount: "ca. 20 %" }, { months: 9, price: 109, after: 139, discount: "ca. 15 %" }] }
     ],
     packages: [
-      { name: "Startpaket Mu-Ki", price: 99, items: ["Check-in Karte", "Trainings-T-Shirt für 1 Elternteil und 1 Kind"], excluded: ["Zweites Kind: T-Shirt lt. Preisliste"] },
+      { name: "Startpaket Mu-Ki", price: 99, items: ["Check-in Karte", "Trainings-T-Shirt für 1 Elternteil und 1 Kind", "UTTC-Verbandsmitgliedschaft im Jahr der Anmeldung"], excluded: [] },
       { name: "Startpaket Panda-Kids | Tiger-Kids*", price: 159, items: ["Check-in Karte", "Kampfanzug und Gürtel, Trainings-T-Shirt", "UTTC-Verbandsmitgliedschaft im Jahr der Anmeldung", "Schulabzeichen und Verbandsabzeichen, *Verbandsausweis"], excluded: ["Gürtelprüfungen"] },
       { name: "Startpaket Warrior-Tigers | Jugend-Erwachsene", price: 199, items: ["Check-in Karte", "Kampfanzug, Gürtel, Trainings-T-Shirt, Safetie-Paket", "Schulabzeichen und Verbandsabzeichen, Verbandsausweis", "UTTC-Verbandsmitgliedschaft im Jahr der Anmeldung"], excluded: ["Gürtelprüfungen"] }
     ],
@@ -41,7 +41,7 @@ const SPORTS = {
 
   kbx: {
     label: "Kickboxen & Boxen",
-    allInclusive: "Zu deiner persönlichen Kickboxen oder Boxen Mitgliedschaft zubuchbar. Enthalten: Kickboxen- oder Boxen- (je nach Standardmitgliedschaft) und Functional Fitness-Stunden, so oft sie stattfinden.",
+    allInclusive: "Zu deiner persönlichen Kickboxen oder Boxen Mitgliedschaft buchbar. Enthalten: Kickboxen- oder Boxen- (je nach Standardmitgliedschaft) und Functional Fitness-Stunden, so oft sie stattfinden.",
     student: STUDENT_TEXT,
     tariffs: [
       { name: "Action", desc: "Training einmal wöchentlich · Mu-Ki: einmal wöchentlich ein Elternteil mit Kind", flex: 119,
