@@ -271,8 +271,6 @@ button { font: inherit; }
 
 .pricing-scroll { min-height: 0; overflow-y: auto; scrollbar-gutter: stable; padding-right: 6px; }
 
-.highlight { margin: 0 0 8px; padding: 8px 11px; border-radius: 8px; background: var(--green-soft); color: var(--text-2); font-size: 0.76rem; }
-.highlight b { color: var(--green-ink); }
 
 .tariff-list { display: grid; gap: 8px; }
 .tariff { display: grid; grid-template-columns: minmax(120px, 0.7fr) minmax(0, 2.3fr); gap: 10px; padding: 8px; border: 1px solid var(--border); border-radius: 12px; }
@@ -332,6 +330,12 @@ button { font: inherit; }
 .addon ul { margin: 4px 0 0; padding-left: 16px; font-size: 0.66rem; }
 .addon__price { flex: 0 0 auto; color: white; font-size: 1.45rem !important; font-weight: 850; letter-spacing: -0.03em; white-space: nowrap; }
 .addon__price small { font-size: 0.6rem; font-weight: 650; letter-spacing: 0; }
+
+.student { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-top: 8px; padding: 10px 12px; border: 1.5px solid var(--kwonro-green); border-radius: 12px; background: var(--green-soft); }
+.student h3 { margin: 0 0 2px; color: var(--kwonro-blue); font-size: 0.92rem; }
+.student p { margin: 0; color: var(--text-2); font-size: 0.68rem; }
+.student__price { flex: 0 0 auto; color: var(--kwonro-blue) !important; font-size: 1.45rem !important; font-weight: 850; letter-spacing: -0.03em; white-space: nowrap; }
+.student__price small { font-size: 0.6rem; font-weight: 650; letter-spacing: 0; }
 
 .starter-packages { margin-top: 8px; border: 1px solid var(--border); border-radius: 12px; background: var(--surface); }
 .starter-packages summary { min-height: 38px; display: flex; align-items: center; justify-content: space-between; padding: 6px 12px; cursor: pointer; list-style: none; color: var(--kwonro-blue); font-size: 0.78rem; font-weight: 800; }
@@ -438,7 +442,7 @@ button { font: inherit; }
   .price small { display: block; }
   .save, .after { white-space: normal; }
   .price-card--flex .price-card__top { margin-bottom: 0; }
-  .addon { flex-direction: column; align-items: flex-start; }
+  .addon, .student { flex-direction: column; align-items: flex-start; }
   .action-bar { grid-template-columns: 1fr; gap: 8px; }
 }
 
